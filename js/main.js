@@ -8,3 +8,7 @@ else {
         document.documentElement.setAttribute('data-bs-theme','dark')
     }
 })
+
+$(document).ready(function () {
+    $('#example').DataTable();
+});

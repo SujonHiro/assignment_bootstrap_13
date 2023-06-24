@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+  <title>Data Table</title>
+</head>
+<body class="bg-white">
+  <nav class="navbar navbar-expand-lg navbar-dark  bg-dark shadow-sm">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Toggle button -->
+      <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <a href="#" class="navbar-brand ms-2">Assignment-13</a>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto ps-lg-0" >
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/table.html">Table</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/accordions.html">Accordions</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/alerts.html">Alert</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pages/form.html">Contact</a></li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown dropdown-hover position-static">
+            <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              UI Elements
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu w-100 mt-0 " aria-labelledby="navbarDropdown">
+  
+              <div class="container">
+                <div class="row my-4">
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a href="/pages/accordions.html" class="list-group-item list-group-item-action">Accordions</a>
+                      <a href="/pages/alerts.html" class="list-group-item list-group-item-action">Alert</a>
+                      <a href="/pages/table.html" class="list-group-item list-group-item-action">Table</a>
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Adipisicing elit</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Explicabo voluptas</a>
+                      <a href="" class="list-group-item list-group-item-action">Perspiciatis quo</a>
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Laudantium maiores</a>
+                      <a href="" class="list-group-item list-group-item-action">Provident dolor</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Iste quaerato</a>
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Est iure</a>
+                      <a href="" class="list-group-item list-group-item-action">Praesentium</a>
+                      <a href="" class="list-group-item list-group-item-action">Laboriosam</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Saepe</a>
+                      <a href="" class="list-group-item list-group-item-action">Vel alias</a>
+                      <a href="" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                      <a href="" class="list-group-item list-group-item-action">Cum dolores</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- Left links -->
+        <div class="form-check form-switch d-flex">
+            <input class="form-check-input" type="checkbox" role="switch" id="darkmode">
+            <label class="form-check-label ps-2 text-light" for="darkmode">Dark Mode</label>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="pt-9">
+    <div class="container-fluid">
+          <div class="row">
+          <div class="col-lg-2 col-12 bg-white position-sticky">
+              
+          </div>
+  <!-- Wrapper  -->
+  <div class="col-lg-8 col-12 p-8">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="mb-7 text-center mt-5" id="intro">
+                  <h1 class="mb-2 ">Form Control</h1>
+                  <p class="mb-6 lead text-muted">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+
+                   </p>
+                </div>
+              </div>
+            </div>
+            <!-- Simple Alert -->
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div id="simple-alert" class="mb-4">
+                  <h2 class="fw-semi-bold mb-1 mt-5 text-center">Contact with Us</h2>
+                </div>
+                <!-- Card -->
+ 
+                    <div class="mb-10 mt-4 card mb-5">
+                    
+                        <!-- Tab content -->
+                        <div class="tab-content p-4" id="pills-tabContent-validation">
+                          <div class="tab-pane tab-example-design fade show active" id="pills-validation-design"
+                            role="tabpanel" aria-labelledby="pills-validation-design-tab">
+                            <form class="row g-3 needs-validation" novalidate>
+                              <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                  <input type="text" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required>
+                                  <div class="invalid-feedback">
+                                    Please choose a username.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                  Please provide a valid city.
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label for="validationCustom04" class="form-label">State</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                  <option selected disabled value="">Choose...</option>
+                                  <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                  Please select a valid state.
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <label for="validationCustom05" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                  Please provide a valid zip.
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                  <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                  </label>
+                                  <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                              </div>
+                            </form>
+                          </div>
+                         
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Scripts -->
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

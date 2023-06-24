@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-info-subtle">
+<body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark  bg-dark  shadow-sm">
         <!-- Container wrapper -->
         <div class="container">
@@ -23,8 +23,11 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto ps-lg-0" >
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/table.html">Table</a></li>
+              <li class="nav-item"><a class="nav-link" href="#accordion">Accordions</a></li>
+              <li class="nav-item"><a class="nav-link" href="#alert">Alert</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="#model">Modal</a></li>
               <!-- Navbar dropdown -->
               <li class="nav-item dropdown dropdown-hover position-static">
                 <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button"
@@ -38,10 +41,10 @@
                     <div class="row my-4">
                       <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
                         <div class="list-group list-group-flush">
-                          <a href="/pages/accordions.html" class="list-group-item list-group-item-action">Accordions</a>
+                          <a href="#accordion" class="list-group-item list-group-item-action">Accordions</a>
                           <a href="/pages/alerts.html" class="list-group-item list-group-item-action">Alert</a>
-                          <a href="" class="list-group-item list-group-item-action">Amet consectetur</a>
-                          <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                          <a href="/pages/table.html" class="list-group-item list-group-item-action">Table</a>
+                          <a href="#card" class="list-group-item list-group-item-action">Card</a>
                           <a href="" class="list-group-item list-group-item-action">Adipisicing elit</a>
                         </div>
                       </div>
@@ -111,7 +114,7 @@
           <div class="col-lg-8 col-12 p-8">
             <div class="row">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <div class="mb-7" id="intro">
+                <div class="mb-7" id="accordion">
                           <h1 class="mb-2 text-center mt-5">Accordions</h1>
       
                         </div>
@@ -133,7 +136,7 @@
                               <li class="nav-item">
                                 <a class="nav-link active" id="pills-accordions-design-tab" data-bs-toggle="pill"
                                   href="#pills-accordions-design" role="tab" aria-controls="pills-accordions-design"
-                                  aria-selected="true">Design</a>
+                                  aria-selected="true">Accordion</a>
                               </li>
             
                             </ul>
@@ -242,7 +245,7 @@
     <div class="col-lg-8 col-12 p-8">
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-          <div class="mb-7 text-center mt-5" id="intro">
+          <div class="mb-7 text-center mt-5" id="alert">
                     <h1 class="mb-2 ">Alerts</h1>
                     <p class="mb-6 lead text-muted">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
                      </p>
@@ -386,10 +389,10 @@
 
         <div class="pt-9">
             <div class="row gx-2">
-                <h1 class="display-6 mt-5 text-center">This is Card and placeholder</h1>
+                <h1 id="card" class="display-6 mt-5 text-center">This is Card and placeholder</h1>
                 <span class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></span>
                 <div class="col-md-4 ">
-                <div class="card mt-5">
+                <div  class="card mt-5">
                   <img src="/img/bg.jpg" class="card-img-top">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -583,14 +586,7 @@
                                                   <div class="spinner-border text-secondary" role="status">
                                                     <span class="visually-hidden">Loading...</span>
                                                   </div>
-                                                  <!-- success spinner -->
-                                                  <div class="spinner-border text-success" role="status">
-                                                    <span class="visually-hidden">Loading...</span>
-                                                  </div>
-                                                  <!-- danger spinner -->
-                                                  <div class="spinner-border text-danger" role="status">
-                                                    <span class="visually-hidden">Loading...</span>
-                                                  </div>
+                                                  
                                                   <!-- warning spinner -->
                                                   <div class="spinner-border text-warning" role="status">
                                                     <span class="visually-hidden">Loading...</span>
@@ -614,8 +610,8 @@
                                           </div>
                                       
                         <div class="col-md-4">
-                          <div id="colors" class="mb-4 mt-4 text-center">
-                            <h2 class="fw-semi-bold mb-1">Color Spinner</h2>
+                          <div id="model" class="mb-4 mt-4 text-center">
+                            <h2 class="fw-semi-bold mb-1">Modal</h2>
                           </div>
                           <!-- Card -->
                           <div class="mb-10 card">
@@ -647,16 +643,12 @@
                                       </div>
                                     </div>
                               </div>
-                              
                             </div>
                           </div>
                         </div>
-                          
-                        </div>
                         <div class="col-md-4">
-                          <!-- Colors -->
                           <div id="colors" class="mb-4 mt-4 text-center">
-                            <h2 class="fw-semi-bold mb-1">Color Spinner</h2>
+                            <h2 class="fw-semi-bold mb-1">Button Group</h2>
                           </div>
                           <!-- Card -->
                           <div class="mb-10 card">
@@ -664,50 +656,127 @@
                             <div class="tab-content p-4" id="pills-tabContent-colors">
                               <div class="tab-pane tab-example-design fade show active" id="pills-colors-design" role="tabpanel"
                                 aria-labelledby="pills-colors-design-tab">
-                                <!-- primary spinner -->
-                                <div class="spinner-border text-primary" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                 <!-- secondary spinner -->
-                                <div class="spinner-border text-secondary" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <!-- success spinner -->
-                                <div class="spinner-border text-success" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <!-- danger spinner -->
-                                <div class="spinner-border text-danger" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <!-- warning spinner -->
-                                <div class="spinner-border text-warning" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <!-- info spinner -->
-                                <div class="spinner-border text-info" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <!-- light spinner -->
-                                <div class="spinner-border text-light" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <!-- dark spinner -->
-                                <div class="spinner-grow text-secondary" role="status">
-                                  <span class="visually-hidden">Loading...</span>
-                                </div>
+                                
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <button type="button" class="btn btn-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-outline-warning">Outline</button>
+                                    
                               </div>
                             </div>
                           </div>
                         </div>
                         </div>
                         </div>
-                     
+                        </div>
+
+                        <div class="pt-9">
+                          <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-lg-2 col-12 bg-white position-sticky">
+                                    
+                                </div>
+                        <!-- Wrapper  -->
+                        <div class="col-lg-8 col-12 p-8">
+                          <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                              <div class="mb-7 text-center mt-5" id="intro">
+                                        <h1 class="mb-2 ">Form Control</h1>
+                                        <p class="mb-6 lead text-muted">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
                       
-                          
-                         
-                  
-      </div>
+                                         </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Simple Alert -->
+                                  <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                      <div id="contact" class="mb-4">
+                                        <h2 class="fw-semi-bold mb-1 mt-5 text-center">Contact with Us</h2>
+                                      </div>
+                                      <!-- Card -->
+                       
+                                          <div class="mb-10 mt-4 card mb-5">
+                                          
+                                              <!-- Tab content -->
+                                              <div class="tab-content p-4" id="pills-tabContent-validation">
+                                                <div class="tab-pane tab-example-design fade show active" id="pills-validation-design"
+                                                  role="tabpanel" aria-labelledby="pills-validation-design-tab">
+                                                  <form class="row g-3 needs-validation" novalidate>
+                                                    <div class="col-md-4">
+                                                      <label for="validationCustom01" class="form-label">First name</label>
+                                                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                                      <div class="valid-feedback">
+                                                        Looks good!
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <label for="validationCustom02" class="form-label">Last name</label>
+                                                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                                      <div class="valid-feedback">
+                                                        Looks good!
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <label for="validationCustomUsername" class="form-label">Username</label>
+                                                      <div class="input-group has-validation">
+                                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                        <input type="text" class="form-control" id="validationCustomUsername"
+                                                          aria-describedby="inputGroupPrepend" required>
+                                                        <div class="invalid-feedback">
+                                                          Please choose a username.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="validationCustom03" class="form-label">City</label>
+                                                      <input type="text" class="form-control" id="validationCustom03" required>
+                                                      <div class="invalid-feedback">
+                                                        Please provide a valid city.
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                      <label for="validationCustom04" class="form-label">State</label>
+                                                      <select class="form-select" id="validationCustom04" required>
+                                                        <option selected disabled value="">Choose...</option>
+                                                        <option>...</option>
+                                                      </select>
+                                                      <div class="invalid-feedback">
+                                                        Please select a valid state.
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                      <label for="validationCustom05" class="form-label">Zip</label>
+                                                      <input type="text" class="form-control" id="validationCustom05" required>
+                                                      <div class="invalid-feedback">
+                                                        Please provide a valid zip.
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                        <label class="form-check-label" for="invalidCheck">
+                                                          Agree to terms and conditions
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                          You must agree before submitting.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <button class="btn btn-primary" type="submit">Submit form</button>
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                               
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
       
 
 
